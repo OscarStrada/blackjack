@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Blackjack Game</h1>
+    </header>
+
+    <div class="row mt-2">
+      <div class="col text-center">
+        <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+        <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
+        <button id="btnDetener" class="btn btn-primary">Detener</button>
+      </div>
+    </div>
+
+    <!-- Jugador -->
+    <div class="row container mt-4">
+      <div class="col">
+        <h2>Puntaje jugador - <span id="puntos-jugador">0</span></h2>
+        <div id="jugador-cartas"></div>
+      </div>
+    </div>
+
+    <!-- Computadora -->
+    <div class="row container">
+      <div class="col">
+        <h2>Puntaje computadora - <span id="puntos-computadora">0</span></h2>
+        <div id="computadora-cartas"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+  </body>
+</html>
